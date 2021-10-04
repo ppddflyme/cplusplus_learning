@@ -1,0 +1,8 @@
+add_executable(exerc_1_1 exerc_1_1.cc)
+add_executable(exerc_1_2 exerc_1_2.cc)
+add_executable(exerc_1_3 exerc_1_3.cc)
+add_executable(exerc_1_4 exerc_1_4.cc)
+add_executable(exerc_1_16 exerc_1_16.cc)
+add_executable(exerc_1_20 exerc_1_20.cc)
+add_executable(exerc_1_21 exerc_1_21.cc)
+add_executable(exerc_1_22 exerc_1_22.cc)

@@ -6,3 +6,4 @@ project(cplusplus_learning
 add_subdirectory(charpter_0001)
 add_subdirectory(charpter_0002)
 add_subdirectory(variadic_template)
+add_subdirectory(getenv)

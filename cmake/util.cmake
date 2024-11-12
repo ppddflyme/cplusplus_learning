@@ -1,3 +1,9 @@
+message(STATUS "CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES: ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES}")
+get_filename_component(CUDA_TOOLKIT_ROOT_DIR "${CMAKE_CUDA_COMPILER}/../.." ABSOLUTE)
+message(STATUS "CUDA_TOOLKIT_ROOT_DIR: ${CUDA_TOOLKIT_ROOT_DIR}")
+include_directories(SYSTEM ${CMAKE_CUDA_TOOLKIT_INCLUDE_DIRECTORIES})
+set(CMAKE_EXE_LINKER_FLAGS " -L${CUDA_TOOLKIT_ROOT_DIR}/lib64")
+
 macro(sub_dir_list result cur_dir)
     file(GLOB children RELATIVE ${cur_dir} ${cur_dir}/*)
     set(dirlist "")

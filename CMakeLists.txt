@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(cplusplus_learning
-	LANGUAGES CXX)
+	LANGUAGES CXX CUDA)
 
 include(cmake/util.cmake)
 sub_dir_list(sub_dirs ${CMAKE_CURRENT_SOURCE_DIR})
